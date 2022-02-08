@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" id="theme" class="dark">
+<html lang="en" id="theme">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
   <title>JS localStorage</title>
+  <script>
+    const html = document.getElementById("theme");
+    html.className = localStorage.getItem("theme");
+  </script>
 </head>
 <body>
   <h2>Hello</h2>
@@ -23,12 +27,14 @@
     <div id="output"></div>
   </fieldset>
 
-  <div class="toggleBtn">
+  <button id="toggleBtn">Toggle</button>
+
+  <!-- <div class="toggleBtn">
     <label class="toggle" for="toggleBtn">
       <input class="toggle__input" name="" type="checkbox" id="toggleBtn">
       <div class="toggle__fill"></div>
     </label>
-  </div>
+  </div> -->
   <script src="js/script.js"></script>
 </body>
 </html>

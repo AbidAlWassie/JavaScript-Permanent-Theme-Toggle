@@ -4,6 +4,8 @@ window.onload = function() {
   const btnInsert = document.getElementById("btnInsert");
   const output = document.getElementById("output");
 
+  
+
 
   btnInsert.onclick = function () {
     const key = inputKey.value;
@@ -25,7 +27,6 @@ window.onload = function() {
   }
 
   const toggleBtn = document.getElementById("toggleBtn");
-  const html = document.getElementById("theme");
 
   toggleBtn.onclick = function () {
     if (localStorage.getItem("theme", "dark")) {
