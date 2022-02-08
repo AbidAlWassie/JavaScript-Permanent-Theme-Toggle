@@ -24,4 +24,22 @@ window.onload = function() {
     output.innerHTML += `${key}: ${value}<br/>`;
   }
 
+  const toggleBtn = document.getElementById("toggleBtn");
+  const html = document.getElementById("theme");
+
+  toggleBtn.onclick = function () {
+    if (localStorage.getItem("theme", "dark")) {
+      localStorage.setItem("theme", "");
+      // html.className="";
+      location.reload();
+    } else {
+      localStorage.setItem("theme", "dark");
+      // html.className="dark";
+      location.reload();
+    }
+  }
+
+  console.log(html);
+  // console.log(toggleBtn);
+
 }
