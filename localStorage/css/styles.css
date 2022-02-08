@@ -37,6 +37,10 @@ fieldset {
   margin-bottom: 10px;
 }
 
+.toggleBtn {
+  margin-bottom: 10px;
+}
+
 .toggle {
   --width: 50px;
   --height: calc(var(--width) / 2);

@@ -4,8 +4,6 @@ window.onload = function() {
   const btnInsert = document.getElementById("btnInsert");
   const output = document.getElementById("output");
 
-  
-
 
   btnInsert.onclick = function () {
     const key = inputKey.value;
@@ -40,7 +38,7 @@ window.onload = function() {
     }
   }
 
-  console.log(html);
+  // console.log(html);
   // console.log(toggleBtn);
 
 }
